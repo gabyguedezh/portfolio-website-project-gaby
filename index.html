@@ -23,11 +23,25 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div id="nav" class="list-inline clearfix col-xs-12 col-md-8">
+                    <div id="nav" class="list-inline clearfix col-md-8 hidden-xs">
                         <li class="nav-item col-xs-3 col-md-3"><a href="#">About</a></li>
                         <li class="nav-item col-xs-3 col-md-2"><a href="#">Web</a></li>
                         <li class="nav-item col-xs-3 col-md-3"><a href="#">Content</a></li>
                         <li class="nav-item col-xs-3 col-md-3"><a href="#">Contact</a></li>
+                    </div>
+                    <div class="dropdown-top">
+                        <div class="dropdown dropdown-nav hidden-md">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Dropdown
+                            <span class="caret"></span>
+                          </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Web</a></li>
+                                <li><a href="#">Content</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,5 +58,7 @@
         footer
     </footer>
 </body>
+
+<!--ISSUE: Need to get the JacaScript code to make the dropdown menu work-->
 
 </html>
