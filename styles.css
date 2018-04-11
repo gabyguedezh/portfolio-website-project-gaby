@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
 
-/* ISSUE: Can't see the font-weight in my page */
 
 /* COLORS */
 
@@ -22,7 +21,8 @@ footer {
 /* ISSUE: Ideally, I want to use the same image but from my images folder*/
 
 .bg-main {
-    background-image: url("https://images.unsplash.com/photo-1519782081916-f177ea2a035b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d306fe41ae1bbae6207dbb8df01f2b0a&auto=format&fit=crop&w=784&q=80");
+    /*background-image: url("https://images.unsplash.com/photo-1519782081916-f177ea2a035b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d306fe41ae1bbae6207dbb8df01f2b0a&auto=format&fit=crop&w=784&q=80");*/
+    background-image: url("images/background-image-project.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -132,4 +132,11 @@ footer {
         top: 0;
         float: right;
     }
+}
+
+
+/* KEYFRAMES */
+
+@keyframes navmenu {
+    
 }
