@@ -13,7 +13,7 @@
 }
 
 footer {
-    background-color: rgba(12, 71, 17,0.9);
+    background-color: rgba(12, 71, 17, 0.9);
 }
 
 
@@ -52,8 +52,7 @@ footer {
     margin: 0;
 }
 
-.nav-item
-a {
+.nav-item a {
     font-family: "raleway", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -78,21 +77,41 @@ a {
 #nav {
     display: inline-block;
     height: 45px;
-    margin:0;
+    margin: 0;
 }
 
 
-/* DROPDOWN MENU*/
+/* NAV BAR */
 
-.dropdown-top {
-    display: block;
-    position: relative;
-    top:-70px;
+.navbar-header {
+    color: rgb(26, 119, 34);
     float: right;
+    position: relative;
+    top: -67px;
+}
+
+.glyphicon-menu-hamburger {
+    font-size: 25px;
+    margin-right: 20px;
 }
 
 
 /* MEDIA QUERIES */
+
+@media (min-width:992px) {
+    .main-title {
+        font-weight: 600;
+        font-size: 29px;
+        text-align: center;
+    }
+}
+
+@media (min-width:992px) {
+    .secondary-title {
+        font-weight: 700;
+        text-align: center;
+    }
+}
 
 @media (min-width:992px) {
     #nav {
@@ -107,17 +126,10 @@ a {
     }
 }
 
-@media (min-width:992px) {
-    .main-title {
-        font-weight: 600;
-        font-size: 29px;
-        text-align: center;
-    }
-}
-
-@media (min-width:992px) {
-    .secondary-title {
-        font-weight: 700;
-        text-align: center;
+@media (min-width992px) {
+    #nav {
+        position: relative;
+        top: 0;
+        float: right;
     }
 }

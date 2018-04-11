@@ -21,30 +21,23 @@
                 <h1 class="main-title">Gabriela Guédez H.</h1>
                 <h3 class="secondary-title">Web Development | Content Creation</h3>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="nav" class="list-inline clearfix col-md-8 hidden-xs">
-                        <li class="nav-item col-xs-3 col-md-3"><a href="#">About</a></li>
-                        <li class="nav-item col-xs-3 col-md-2"><a href="#">Web</a></li>
-                        <li class="nav-item col-xs-3 col-md-3"><a href="#">Content</a></li>
-                        <li class="nav-item col-xs-3 col-md-3"><a href="#">Contact</a></li>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
                     </div>
-                    <div class="dropdown-top">
-                        <div class="dropdown dropdown-nav hidden-md">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Dropdown
-                            <span class="caret"></span>
-                          </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Web</a></li>
-                                <li><a href="#">Content</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                                <li class="active nav-item"><a href="#">About</a></li>
+                                <li class="active nav-item"><a href="#">Web</a></li>
+                                <li class="active nav-item"><a href="#">Content</a></li>
+                                <li class="active nav-item"><a href="#">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
     <section>
@@ -60,5 +53,6 @@
 </body>
 
 <!--ISSUE: Need to get the JacaScript code to make the dropdown menu work-->
-
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </html>
