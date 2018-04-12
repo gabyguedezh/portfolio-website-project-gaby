@@ -13,14 +13,15 @@
 
 .nav-bottom {
     background-color: rgba(12, 71, 17, 0.5);
+    text-align: center;
 }
 
 .spice-button {
     color: #fafafa;
-    text-shadow:  5px 0px 10px rgba(250, 250, 250, 0.4);
+    text-shadow: 5px 0px 10px rgba(250, 250, 250, 0.4);
 }
 
-/* BOOTSTARP SPICE */
+/* BOOTSTARP SPICE NAVBAR */
 
 .navbar-mod .navbar-toggle {
     border-color: transparent;
@@ -35,15 +36,60 @@
     background-color: rgb(12, 71, 17);
 }
 
+.spice-button:hover {
+    color: rgb(12, 71, 17);
+}
+
+
+/* CENTER BOX */
+
+.center-box {
+    background-color: rgba(250, 250, 250, 0.4);
+}
+
+.center-box-heading {
+    font-family: "raleway", sans-serif;
+    color: rgb(12, 71, 17);
+}
+
+.center-box-heading h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.center-box-heading h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.center-box-p {
+    font-family: "open sans", sans-serif;
+    font-weight: 500;
+}
+
+.center-box-button {
+    margin: 10px 20px 20px 10px;
+    height: 50px;
+    width: 70px;
+    border-radius: 35px;
+    background-color: purple;
+}
+
+.center-box-button-text {
+    text-align: center;
+    color: #fafafa;
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+}
 
 /* FOOTER */
 
 footer {
     background-color: rgba(12, 71, 17, 0.9);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10%;
+    height: 7%;
 }
 
 
@@ -64,12 +110,10 @@ footer {
 }
 
 
-/* FONTS AND TYPOGRAPHY*/
+/* MEDIA QUERIES */
 
-/* KEYFRAMES */
-
-@keyframes navmenu {}
-
-#masthead h1 {
-    margin-top: 60px;
+@media (min-width:767px) {
+    .center-box {
+        max-width: 70%;
+    }
 }
