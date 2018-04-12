@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
 
+/* ISSUE: Can't get rid of the text decoration in the buttons */
+/* ISSUE: Can't make the center box center on mobile */
+/* ISSUE: Need to make center box dissapear when opening navbar */
 
 /* NAVBAR */
 
@@ -44,7 +47,10 @@
 /* CENTER BOX */
 
 .center-box {
-    background-color: rgba(250, 250, 250, 0.4);
+    background-color: rgba(250, 250, 250, 0.7);
+    position: relative;
+    
+    
 }
 
 .center-box-heading {
@@ -64,7 +70,8 @@
 
 .center-box-p {
     font-family: "open sans", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    color: #111;
 }
 
 .center-box-button {
@@ -72,7 +79,20 @@
     height: 50px;
     width: 70px;
     border-radius: 35px;
-    background-color: purple;
+    border-left-color: rgb(18, 105, 25);
+    border-top-color: rgb(18, 105, 25);
+    border-right-color: rgb(15, 68, 20);
+    border-bottom-color: rgb(15, 68, 20);
+    background-color: rgb(12, 71, 17);
+    transition: 0.25s ease-in-out;
+}
+
+.center-box-button:hover {
+    background-color: rgb(255, 204, 0);
+    border-left-color: rgb(255, 219, 77);
+    border-top-color: rgb(255, 219, 77);
+    border-right-color: rgb(230, 184, 0);
+    border-bottom-color: rgb(230, 184, 0);
 }
 
 .center-box-button-text {
@@ -82,38 +102,44 @@
     font-weight: 500;
 }
 
+.center-box-button-text:hover {
+    text-decoration: none;
+    color: #fafafa;
+    text-shadow: 0px 0px 15px rgb(51, 39, 0);
+}
+
 /* FOOTER */
 
 footer {
-    background-color: rgba(12, 71, 17, 0.9);
+    background-color: rgb(12, 71, 17);
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 7%;
+    height: 10%;
 }
 
 
 /* BACKGROUNDS */
 
-/* ISSUE: Ideally, I want to use the same image but from my images folder*/
-
 .bg-main {
-    /*background-image: url("https://images.unsplash.com/photo-1519782081916-f177ea2a035b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d306fe41ae1bbae6207dbb8df01f2b0a&auto=format&fit=crop&w=784&q=80");*/
     background-image: url("images/background-image-project.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    /* NOTE: THE TEXT SHADOW BELOW MUST GO EVENTUALLY */
-    text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
 }
 
 
 /* MEDIA QUERIES */
 
-@media (min-width:767px) {
+@media (min-width:991px) {
     .center-box {
-        max-width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        height: 40%;
+        width: 60%;
     }
 }
