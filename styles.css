@@ -6,6 +6,11 @@
 
 /* PENDING: Change Slack and Skype for Pinterest or other social media */
 
+/* PENDING: Get rid of the right padding on mobile for columns */
+
+/* PENDING: Crop image so it fits container properly */
+
+
 /* GENERAL */
 
 /* ISSUE: Need to make the background image work in all sizes */
@@ -48,6 +53,8 @@
 .clean-list {
     list-style: none;
 }
+
+
 
 /* NAVBAR */
 
@@ -253,19 +260,25 @@
     margin-top: 2%;
 }
 
+@media (min-width:991px) {
+    .col-a,
+    .col-b,
+    .col-c,
+    .col-d {
+        padding: 0;
+    }
+}
+
 .col-a {
     background-color: rgba(250, 250, 250, 0.7);
-    /*display: inline;*/
 }
 
 .col-b {
     background-color: rgba(255, 204, 0, 0.7);
-    /*display: inline;*/
 }
 
 .col-c {
     background-color: rgba(12, 71, 17, 0.7);
-    display: inline-block;
 }
 
 @media (max-height:500px) {
@@ -405,6 +418,16 @@
 .skype-button {
     background-color: rgb(0, 175, 240);
     border-color: rgb(102, 214, 255) rgb(0, 150, 204) rgb(0, 150, 204) rgb(102, 214, 255);
+}
+
+/* IMAGES */
+
+.profile-pic {
+    background-image: url(/images/gabyguedezh-profile.jpg);
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
 }
 
 /* FOOTER */
