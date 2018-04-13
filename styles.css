@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
 
-/* ISSUE: Can't get rid of the text decoration in the buttons */
-
-/* ISSUE: Can't make the center box center on mobile */
+/* ISSUE: Need to modify the navbar hover to change background color */
 
 /* ISSUE: Need to make center box dissapear when opening navbar */
 
+/* PENDING: Change Slack and Skype for Pinterest or other social media */
+
 /* GENERAL */
+
+/* ISSUE: Need to make the background image work in all sizes */
 
 .bg-main {
     background-image: url("images/background-image-project.jpg");
@@ -67,6 +69,11 @@
     text-shadow: 5px 0px 10px rgba(250, 250, 250, 0.4);
 }
 
+.spice-button:hover {
+    color: rgb(12, 71, 17);
+}
+
+
 /* BOOTSTARP SPICE NAVBAR */
 
 .navbar-mod .navbar-toggle {
@@ -82,10 +89,6 @@
     background-color: rgb(12, 71, 17);
 }
 
-.spice-button:hover {
-    color: rgb(12, 71, 17);
-}
-
 
 /* CENTER BOX */
 
@@ -96,6 +99,7 @@
 
 @media (min-width:767px) {
     .center-box {
+        height: 250px;
         max-width: 70%;
         transform: translateX(25%);
     }
@@ -103,32 +107,68 @@
 
 @media (min-width:991px) {
     .center-box {
+        height: 350px;
         max-width: 70%;
-        transform: translateY(50%);
-        left:15%;
+        transform: translateY(30%);
+        left: 15%;
     }
 }
 
 .center-box-heading {
     font-family: "raleway", sans-serif;
+    position: relative;
+    margin-left: 20px;
 }
 
 .center-box-heading h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     color: rgb(12, 71, 17);
 }
 
+@media (min-width:767px) {
+    .center-box-heading h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width:991px) {
+    .center-box-heading h1 {
+        font-size: 60px;
+    }
+}
+
 .center-box-heading h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(102, 51, 0);
+}
+
+@media (min-width:767px) {
+    .center-box-heading h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width:992px) {
+    .center-box-heading h2 {
+        font-size: 35px;
+    }
 }
 
 .center-box-p {
     font-family: "open sans", sans-serif;
     font-weight: 600;
+    font-size: 14px;
     color: #111;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+@media (min-width:991px) {
+    .center-box-p {
+        font-size: 18px;
+    }
 }
 
 .center-box-button {
@@ -152,11 +192,21 @@
     border-bottom-color: rgb(230, 184, 0);
 }
 
+@media (min-width:992px) {
+    .center-box-button {
+        margin: 20px 30px 40px 20px;
+        height: 75px;
+        width: 105px;
+        border-radius: 37px;
+    }
+}
+
 .center-box-button-text {
     text-align: center;
     color: #fafafa;
     font-family: "raleway", sans-serif;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .center-box-button-text:hover {
@@ -165,15 +215,34 @@
     text-shadow: 0px 0px 15px rgb(51, 39, 0);
 }
 
+@media (min-width:992px) {
+    .center-box-button-text {
+        font-size: 20px;
+    }
+}
+
 
 /* SOCIAL MEDIA  */
+
+.social-media-section {
+    position: absolute;
+    bottom: 5%;
+}
+
+@media (max-height:500px) {
+    .social-media-section {
+        width: 280px;
+        margin-right: 25px;
+    }
+}
 
 @media (min-width:767px) {
     .social-media-section {
         transform: rotate(90deg);
         position: absolute;
         right: -20%;
-        top:50%;
+        top: 50%;
+        bottom: 50%;
     }
 }
 
@@ -292,7 +361,7 @@ footer {
     font-family: "open sans", sans-serif;
     color: #fafafa;
     font-size: 10px;
-    margin-top:4px;
+    margin-top: 4px;
 }
 
 @media(min-width:767px) {
@@ -305,14 +374,14 @@ footer {
 @media(min-width:767px) {
     .footer-menu {
         float: right;
-        margin-right:10%;
+        margin-right: 10%;
     }
 }
 
 @media(min-width:991px) {
     .footer-menu {
         float: right;
-        margin-right:15%;
+        margin-right: 15%;
     }
 }
 
