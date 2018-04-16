@@ -10,7 +10,6 @@
 
 /* PENDING: Crop image so it fits container properly */
 
-
 /* GENERAL */
 
 /* ISSUE: Need to make the background image work in all sizes */
@@ -230,34 +229,70 @@
 /* COL INTRO */
 
 .col-master {
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 5%;
     padding: 0!important;
 }
 
-@media (max-height:500px) {
+@media (min-width:575px) {
     .col-master {
         margin-top: 2%;
+        margin-left: 0%!important;
     }
 }
 
-@media (min-width:991px) {
+@media (min-width:575px) and (max-height:500px) {
     .col-master {
+        margin-top: 2%;
+        margin-left: 0%!important;
+        max-width: 80%;
+    }
+}
+
+@media (min-width:767px) {
+    .col-master {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        max-width: 85%;
+    }
+}
+
+@media (min-width:767px) and (max-height:500px) {
+    .col-master {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        max-width: 85%;
+    }
+}
+
+@media (min-width:992px) {
+    .col-master {
+        margin-top: 10%;
+    }
+}
+
+
+@media (min-width:1199px) {
+    .col-master {
+        margin-left:10%!important;
         max-width: 70%;
     }
 }
 
-@media (min-width:1199px) {
-    .col-master {
-        max-width: 60%;
-    }
-}
+/*.col-master p,*/
+/*h3 {*/
+/*    margin: 10px;*/
+/*}*/
 
 .col-a,
 .col-b,
 .col-c,
 .col-d {
     margin-top: 2%;
+}
+
+.flex-row {
+    display: flex;
 }
 
 @media (min-width:991px) {
@@ -278,7 +313,7 @@
 }
 
 .col-c {
-    background-color: rgba(12, 71, 17, 0.7);
+    background-color: transparent;
 }
 
 @media (max-height:500px) {
@@ -294,6 +329,45 @@
 }
 
 
+/* PAGES STYLES */
+
+.action-button {
+    float: right;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.action-text {
+    text-align: center;
+    color: #fafafa;
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.action-text:hover {
+    text-decoration: none;
+    color: #fafafa;
+    text-shadow: 0px 0px 15px rgb(51, 39, 0);
+}
+
+@media (min-width:991px) {
+    .action-text {
+        font-size: 16px;
+    }
+}
+
+.secondary-p {
+    display: none;
+}
+
+@media (min-width:991px) {
+    .secondary-p {
+        display: inline;
+    }
+}
+
 
 /* SOCIAL MEDIA  */
 
@@ -302,15 +376,41 @@
     bottom: 5%;
 }
 
-@media (max-height:500px) {
+@media (min-width: 300px) {
     .social-media-section {
-        width: 280px;
-        margin-right: 25px;
+        width: 180px;
+        margin-right: 5px;
+        position: absolute;
+        float: left;
+        bottom: -35%;
     }
 }
 
-@media (min-width:767px) {
+@media (min-width: 300px) and (min-height:321px) {
     .social-media-section {
+        width: 180px;
+        margin-right: 5px;
+        position: absolute;
+        float: left;
+        bottom: -8%;
+    }
+}
+
+
+@media (min-width: 300px) and (min-height:570px) {
+    .social-media-section {
+        width: 280px;
+        margin-right: 5px;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+}
+
+@media (min-width: 575px) {
+    .social-media-section {
+        width: 280px;
+        margin-right: 35px;
         transform: rotate(90deg);
         position: absolute;
         right: -20%;
@@ -319,11 +419,39 @@
     }
 }
 
-@media (min-width:991px) {
+@media (min-width: 575px) and (min-height:500px) {
+    .social-media-section {
+        width: 280px;
+        margin-right: 35px;
+        transform: rotate(90deg);
+        position: absolute;
+        right: -20%;
+        top: 50%;
+        bottom: 50%;
+    }
+}
+
+@media (min-width: 767px) {
     .social-media-section {
         transform: rotate(90deg);
         position: absolute;
         right: -15%;
+    }
+}
+
+@media (min-width: 767px) and (min-height:499px) {
+    .social-media-section {
+        /*transform: rotate(90deg);*/
+        position: absolute;
+        right: -15%;
+    }
+}
+
+@media (min-width: 991px) {
+    .social-media-section {
+        transform: rotate(90deg);
+        position: absolute;
+        right: -10%;
     }
 }
 
@@ -348,7 +476,7 @@
     border-radius: 20px;
 }
 
-@media (min-width:767px) {
+@media (min-width:639px) {
     .social-media-button {
         transform: rotate(-90deg);
     }
@@ -423,12 +551,15 @@
 /* IMAGES */
 
 .profile-pic {
-    background-image: url(/images/gabyguedezh-profile.jpg);
     float: left;
     height: 100px;
     width: 100px;
     border-radius: 50px;
+    background-image: url(/images/gabyguedezh-profile.jpg);
+    background-size: cover;
+    margin: 10px;
 }
+
 
 /* FOOTER */
 
