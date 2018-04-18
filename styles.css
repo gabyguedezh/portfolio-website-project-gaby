@@ -6,11 +6,17 @@
 
 /* ISSUE: Can't get the yellow text-shadow to appear in the example-link class */
 
+/* ISSUE: The footer's background-color dissapears in smaller screen sizes */
+
 /* PENDING: Change Slack and Skype for Pinterest or other social media */
 
 /* PENDING: Get rid of the right padding on mobile for columns */
 
 /* PENDING: Crop image so it fits container properly */
+
+/* PENDING: Add border to photo */
+
+/* PENDING: Pair top of flexboxes */
 
 /* GENERAL */
 
@@ -109,6 +115,7 @@
         height: 250px;
         max-width: 70%;
         transform: translateX(25%);
+        border-radius: 20px;
     }
 }
 
@@ -282,6 +289,15 @@
     margin-top: 2%;
 }
 
+@media (min-width:767px) {
+    .col-a,
+    .col-b,
+    .col-c,
+    .col-d {
+        border-radius: 20px;
+    }
+}
+
 .flex-row {
     display: flex;
 }
@@ -382,7 +398,16 @@
     font-family: "raleway", sans-serif;
     margin-top: 5px;
     margin-left: 15px;
+    text-align: center;
     font-size: 24px;
+    font-weight: 600;
+    color: rgb(12, 71, 17);
+}
+
+.small-heading {
+    font-family: "raleway", sans-serif;
+    margin-left: 15px;
+    font-size: 16px;
     font-weight: 600;
     color: rgb(12, 71, 17);
 }
@@ -395,14 +420,15 @@
     color: #111;
 }
 
+.centered-p {
+    text-align: center;
+}
+
 .secondary-p {
     display: none;
 }
 
 /* CONTACT FORM */
-
-
-
 
 /* SOCIAL MEDIA  */
 
@@ -609,6 +635,12 @@
     max-height: 100%;
 }
 
+@media (min-width:767px) {
+    .example-web-img {
+        border-radius: 20px;
+    }
+}
+
 .example-p {
     font-family: "open sans", sans-serif;
     font-style: italic;
@@ -617,47 +649,54 @@
     color: #111;
 }
 
-.example-link {
-    text-decoration: none;
-}
-
-.example-link:hover {
-    text-decoration: none;
-    color: #111;
-}
-
-.example-link:visited {
-    text-decoration: none;
-    color: #111;
-}
-
-.example-link:active {
-    text-decoration: none;
-    color: #111;
-}
-
-.example-link:link {
-    text-decoration: none;
-    color: #111;
-}
+@media (min-width:767px) {
+    .example-p {
+        border-radius: 10px;
+    }
 
 
+    .example-link {
+        text-decoration: none;
+    }
 
-/* FOOTER */
+    .example-link:hover {
+        text-decoration: none;
+        color: #111;
+    }
 
-footer {
-    background-color: rgba(12, 71, 17, 0.9);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-}
+    .example-link:visited {
+        text-decoration: none;
+        color: #111;
+    }
 
-.footer-box {
-    font-family: "open sans", sans-serif;
-    color: #fafafa;
-    font-size: 10px;
-    margin-top: 4px;
+    .example-link:active {
+        text-decoration: none;
+        color: #111;
+    }
+
+    .example-link:link {
+        text-decoration: none;
+        color: #111;
+    }
+
+
+    /* FOOTER */
+    
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+    }
+
+    .footer-box {
+        font-family: "open sans", sans-serif;
+        background-color: rgb(12, 71, 17);
+        background-color: rgba(12, 71, 17, 0.9);
+        font-size: 10px;
+        margin-top: 4px;
+    }
 }
 
 @media(min-width:767px) {
@@ -681,8 +720,12 @@ footer {
     }
 }
 
-
 .footer-link {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.footer-p {
+    text-decoration: none;
+    color: #fafafa;
 }
