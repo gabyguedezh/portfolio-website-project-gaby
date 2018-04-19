@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
 
-/* ISSUE: Need to modify the navbar hover to change background color */
-
-/* ISSUE: Need to make center box dissapear when opening navbar */
-
-/* ISSUE: Can't get the yellow text-shadow to appear in the example-link class */
-
 /* ISSUE: The footer's background-color dissapears in smaller screen sizes */
 
 /* PENDING: Change Slack and Skype for Pinterest or other social media */
@@ -20,13 +14,15 @@
 
 /* GENERAL */
 
-/* ISSUE: Need to make the background image work in all sizes */
+
+.screen-size {
+    height: 100vh;
+}
 
 .bg-main {
     background-image: url("images/background-image-project.jpg");
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -87,6 +83,9 @@
     color: rgb(12, 71, 17);
 }
 
+#navbar>ul>li>a:hover {
+    background-color: rgba(255, 204, 0, 0.7);
+}
 
 /* BOOTSTARP SPICE NAVBAR */
 
@@ -698,13 +697,18 @@
 
 /* IMAGES */
 
+.border-img {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fafafa;
+}
+
 .profile-pic {
     float: left;
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    background-image: url(/images/gabyguedezh-profile.jpg);
-    background-size: cover;
+    /*background-size: cover;*/
     margin: 10px;
 }
 
@@ -774,14 +778,14 @@
         margin: 5px;
     }
 
-@media (min-width:1199px) {
-     .logo-img {
-        height: 88px;
-        width: 88px;
-        border-radius: 44px;
-        margin: 5px 5px 10px 5px;
-     }
- }
+    @media (min-width:1199px) {
+        .logo-img {
+            height: 88px;
+            width: 88px;
+            border-radius: 44px;
+            margin: 5px 5px 10px 5px;
+        }
+    }
 
     /* FOOTER */
     footer {
@@ -799,33 +803,33 @@
         margin-top: 4px;
     }
 
-@media(min-width:767px) {
-    .footer-box {
-        font-size: 14px;
-        margin-top: 6px;
+    @media(min-width:767px) {
+        .footer-box {
+            font-size: 14px;
+            margin-top: 6px;
+        }
     }
-}
 
-@media(min-width:767px) {
-    .footer-menu {
-        float: right;
-        margin-right: 10%;
+    @media(min-width:767px) {
+        .footer-menu {
+            float: right;
+            margin-right: 10%;
+        }
     }
-}
 
-@media(min-width:991px) {
-    .footer-menu {
-        float: right;
-        margin-right: 15%;
+    @media(min-width:991px) {
+        .footer-menu {
+            float: right;
+            margin-right: 15%;
+        }
     }
-}
 
-.footer-link {
-    margin-left: 5px;
-    margin-right: 5px;
-}
+    .footer-link {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
-.footer-p {
-    text-decoration: none;
-    color: #fafafa;
-}
+    .footer-p {
+        text-decoration: none;
+        color: #fafafa;
+    }
