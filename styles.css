@@ -2,6 +2,8 @@
 
 /* ISSUE: The footer's background-color dissapears in smaller screen sizes */
 
+/* PENDING: Merge media queries and identify if one is causing the issue with the footer */
+
 /* PENDING: Change Slack and Skype for Pinterest or other social media */
 
 /* PENDING: Get rid of the right padding on mobile for columns */
@@ -13,7 +15,6 @@
 /* PENDING: Pair top of flexboxes */
 
 /* GENERAL */
-
 
 .screen-size {
     height: 100vh;
@@ -708,7 +709,8 @@
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    /*background-size: cover;*/
+    background-image: url(/images/gabyguedezh-profile.jpg);
+    background-size: cover;
     margin: 10px;
 }
 
@@ -789,41 +791,41 @@
 
     /* FOOTER */
     footer {
+        display: block;
         position: fixed;
+        left: 0;
         bottom: 0;
         width: 100%;
-        height: 30px;
+        height: 5%;
+        background-color: rgb(12, 71, 17);
+        background-color: rgba(12, 71, 17, 0.9);
     }
 
     .footer-box {
         font-family: "open sans", sans-serif;
-        background-color: rgb(12, 71, 17);
-        background-color: rgba(12, 71, 17, 0.9);
-        font-size: 10px;
+        font-size: 1em;
         margin-top: 4px;
     }
 
     @media(min-width:767px) {
         .footer-box {
-            font-size: 14px;
+            font-size: 1.1em;
             margin-top: 6px;
         }
     }
-
+    
     @media(min-width:767px) {
         .footer-menu {
             float: right;
             margin-right: 10%;
         }
     }
-
     @media(min-width:991px) {
         .footer-menu {
             float: right;
             margin-right: 15%;
         }
     }
-
     .footer-link {
         margin-left: 5px;
         margin-right: 5px;
