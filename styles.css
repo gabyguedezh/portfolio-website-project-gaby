@@ -175,16 +175,13 @@
 /* COL INTRO */
 
 .col-master {
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin: 2% 0 5% 0;
     padding: 0!important;
 }
 
 
 .flex-row {
     display: flex;
-}
-
 }
 
 .col-a,
@@ -227,6 +224,21 @@
     width: 80px;
     height: 40px;
     border-radius: 20px;
+    margin: 10px 20px 20px 10px;
+    border-left-color: rgb(18, 105, 25);
+    border-top-color: rgb(18, 105, 25);
+    border-right-color: rgb(15, 68, 20);
+    border-bottom-color: rgb(15, 68, 20);
+    background-color: rgb(12, 71, 17);
+    transition: 0.25s ease-in-out;
+}
+
+.action-button:hover {
+    background-color: rgb(255, 204, 0);
+    border-left-color: rgb(255, 219, 77);
+    border-top-color: rgb(255, 219, 77);
+    border-right-color: rgb(230, 184, 0);
+    border-bottom-color: rgb(230, 184, 0);
 }
 
 .action-text {
@@ -316,7 +328,12 @@
     margin-top: 20px;
 }
 
-
+.skills-list {
+    width: 60%;
+    float: right;
+    margin-right: 10px;
+    text-align: left;
+}
 
 /* CONTACT PAGE */
 
@@ -565,7 +582,12 @@
 
 /* MEDIA QUERIES GENERAL */
 
-/* MEDIA QUERIES NAVBAR */
+@media (max-width:811px) and (max-height:414px) {
+    .screen-size {
+        height: 130vh;
+        width: 100vw;
+    }
+}
 
 /* MEDIA QUERIES CENTER-BOX */
 
@@ -600,6 +622,7 @@
     .center-box-p {
         font-size: 18px;
     }
+
     .center-box-button {
         margin: 20px 30px 40px 20px;
         height: 75px;
@@ -614,10 +637,13 @@
 
 /* MEDIA QUERIES COL-MASTER */
 
-@media (max-height:500px) {
+@media (max-height:568px) {
     .col-b,
     .col-c {
         display: none;
+    }
+    .skills-list {
+        width: 50%;
     }
 }
 
@@ -637,6 +663,9 @@
         margin-left: 0%!important;
         max-width: 80%;
     }
+    .skills-list {
+        width: 70%;
+    }
 }
 
 @media (min-width:767px) {
@@ -651,6 +680,9 @@
     .col-d,
     .col-e {
         border-radius: 20px;
+    }
+    .skills-list {
+        width: 75%;
     }
 }
 
@@ -687,7 +719,10 @@
     }
 }
 
+
 /* MEDIA QUERIES SOCIAL-MEDIA */
+
+/* Very Small Phones */
 
 @media (max-width:360px) and (max-height:588px) {
     .social-media-section {
@@ -695,37 +730,56 @@
     }
 }
 
+/* Small Phones */
+
 @media (min-width:575px) and (max-height:575px) {
     .social-media-section {
         position: fixed;
         height: 250px;
         width: 200px;
-        top:40vh;
+        top: 40vh;
+        left: 80%;
     }
-   .social-media {
+    .social-media {
         transform: rotate(90deg);
-        left:80%;
+        left: 80%;
     }
     .social-media-button {
         transform: rotate(270deg);
     }
 }
 
+/* Small Phones Horizontal */
+
 @media(max-height:640px) {
     .social-media-section {
         transform: scale(0.8);
-        bottom: 1%;
+        position: fixed;
+        bottom: 6%;
     }
 }
+
+/* iPhone X horizontal */
+
+@media(max-width:812px) and (min-width:641px) and (max-height:375px) {
+    .social-media-section {
+        transform: scale(0.8);
+        position: fixed;
+        bottom: 6%;
+        left: 80%;
+    }
+}
+
+/* Laptop */
 
 @media (min-width:767px) and (min-height:575px) {
     .social-media-section {
         position: fixed;
         height: 250px;
         width: 200px;
-        top:40vh;
+        top: 40vh;
         transform: scale(1.2);
-        left:85%;
+        left: 85%;
     }
     .social-media {
         transform: rotate(90deg);
@@ -734,6 +788,28 @@
         transform: rotate(270deg);
     }
 }
+
+/* iPad */
+
+@media (min-width:767px) and (min-height:767px) {
+    .social-media-section {
+        position: fixed;
+        height: 250px;
+        width: 200px;
+        top: 40vh;
+        transform: scale(1.2);
+        left: 85%;
+    }
+    .social-media {
+        transform: rotate(90deg);
+    }
+    .social-media-button {
+        transform: rotate(270deg);
+    }
+}
+
+
+/* iPad Pro */
 
 @media (min-width:991px) and (min-height:1199px) {
     .social-media-section {
