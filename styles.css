@@ -612,6 +612,14 @@
     }
 }
 
+/* Tablet Vertical */
+@media (min-width:1023px) and (min-height:767) {
+    .screen-size {
+        height: 130vh;
+        width: 100vw;
+    }
+}
+
 /* MEDIA QUERIES CENTER-BOX */
 
 @media (min-width:767px) {
@@ -743,6 +751,11 @@
     }
 }
 
+@media (min-width:767px) and (min-height:575px) {
+    .yellow-heading {
+        margin-left:1%!important;
+    }
+}
 
 /* MEDIA QUERIES SOCIAL-MEDIA */
 
