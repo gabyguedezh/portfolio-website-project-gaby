@@ -105,7 +105,7 @@
 /* CENTER BOX */
 
 .center-box {
-    background-color: rgba(250, 250, 250, 0.7);
+    background-color: rgba(250, 250, 250, 0.8);
     position: relative;
 }
 
@@ -621,6 +621,18 @@
 }
 
 /* MEDIA QUERIES CENTER-BOX */
+
+@media (max-width:375px) {
+    .center-box-button {
+        margin: 14px 10px 28px 10px;
+        height: 50px;
+        width: 70px;
+        border-radius: 37px;
+    }
+    .center-box-button-text {
+        font-size: 14px;
+    }
+}
 
 @media (min-width:767px) {
     .center-box {
