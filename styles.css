@@ -4,10 +4,6 @@
 
 /* PENDING: Merge media queries and identify if one is causing the issue with the footer */
 
-/* PENDING: Change Slack and Skype for Pinterest or other social media */
-
-/* PENDING: Get rid of the right padding on mobile for columns */
-
 /* PENDING: Pair top of flexboxes */
 
 /* GENERAL */
@@ -556,7 +552,13 @@
     margin: 5px;
 }
 
+/* MODAL */
 
+.modal-button {
+    padding: 0!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
 
 /* FOOTER */
 
