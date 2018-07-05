@@ -493,9 +493,9 @@
 }
 
 .example-web-div {
-    width: 75%;
-    height: 5%;
-    margin: auto;
+    max-width: 40%;
+    max-height: 5%;
+    margin: 10;
 }
 
 .example-last {
@@ -506,8 +506,6 @@
     max-width: 100%;
     max-height: 100%;
 }
-
-
 
 .example-p {
     font-family: "open sans", sans-serif;
