@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
 
-/* PENDING: Merge media queries and identify if one is causing the issue with the footer */
-
-/* PENDING: Pair top of flexboxes */
-
 /* GENERAL */
 
 .screen-size {
@@ -208,7 +204,7 @@
 }
 
 .col-e {
-    background-color: rgba(12, 71, 17, 0.5);
+    background-color: rgba(12, 71, 17, 0.9);
     display: inline-block;
     max-height: 352px;
 }
@@ -310,6 +306,14 @@
     font-size: 16px;
     font-weight: 500;
     color: #111;
+}
+
+.white-p {
+    font-family: "open sans", sans-serif;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
 }
 
 .centered-p {
