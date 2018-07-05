@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700');
 
-/* ISSUE: The footer's background-color dissapears in smaller screen sizes */
-
 /* PENDING: Merge media queries and identify if one is causing the issue with the footer */
 
 /* PENDING: Pair top of flexboxes */
