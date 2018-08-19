@@ -1,8 +1,8 @@
-function sendMail(contactForm) {
+function sendMail(default_service, portfolio_project, contactForm) {
     emailjs.send("gmail", "portfolio-project", {
         "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "info_request": contactForm.projectsummary.value
+        "from_email": contactForm.email.value,
+        "info_request": contactForm.message.value
     })
     .then(
         function(response) {
