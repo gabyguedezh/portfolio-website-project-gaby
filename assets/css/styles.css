@@ -11,7 +11,7 @@
 }
 
 .bg-main {
-    background-image: url("images/background-image-project.jpg");
+    background-image: url("./assets/images/background-image-project.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
