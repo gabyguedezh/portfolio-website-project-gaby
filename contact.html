@@ -78,13 +78,14 @@
                 <div class="col-d">
                     <p class="heading">Contact Form</p>
                     <form class="contact-form normal-p">
-                        <label class="form-label">Name:</label><input class="form-input" type="text" name="name" id="name" placeholder="Name (required)" required/><br>
-                        <label class="form-label">Company:</label><input class="form-input" type="text" name="company" placeholder="Company" /><br>
-                        <label class="form-label">Phone:</label><input class="form-input" type="tel" name="phone" placeholder="Phone" /><br>
+                        <label class="form-label">Name:</label><input class="form-input" type="text" name="name" placeholder="Name (required)" required/><br>
+                        <label class="form-label">Company:</label><input class="form-input" type="text" name="company" placeholder="Company" required/><br>
+                        <label class="form-label">Phone:</label><input class="form-input" type="tel" name="phone" placeholder="Phone" required/><br>
                         <label class="form-label">Email:</label><input class="form-input" type="email" name="email" placeholder="Email (required)" required/><br>
                         <label class="form-label text-area-label">Message:</label><textarea class="textarea-input" name="message" rows="2" cols="50" placeholder="Message (required)" required/></textarea><br>
-                        <button class="action-button action-text clean-link" value="Contact" data-toggle="modal" data-target="#contactModal" />Contact</button>
+                        <!--<button class="action-button action-text clean-link" id="form-button" value="Contact" data-toggle="modal"/>Contact</button>-->
                     </form>
+                    <button class="action-button action-text clean-link" id="form-button" value="Contact" data-toggle="modal"/>Contact</button>
                     <!-- Modal -->
                     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-push" role="document">
@@ -131,6 +132,27 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin=" anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script>
+        $( 'document' ).ready(function() {
+            var formName = $('input[name=name]');
+            var formCompany = $('input[name=company]');
+            var formPhone = $('input[name=phone]');
+            var formEmail = $('input[name=email]');
+            var formMessage = $('textarea[name=message]');
+            $('#form-button').on('click', function() {
+                if ((formName.val() != "") &&
+                (formCompany.val() != "") &&
+                (formPhone.val() != "") &&
+                (formEmail.val() != "") &&
+                (formMessage.val() != "")) {
+                    $('#contactModal').modal('show') 
+                } 
+            });
+            $('#contactModal').on('hidden.bs.modal', function (e) {
+              location.reload();
+            });
+        });
+    </script>
 </body>
 
 </html>
