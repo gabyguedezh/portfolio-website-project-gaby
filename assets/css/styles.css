@@ -390,6 +390,17 @@
     color: rgb(12, 71, 17);
 }
 
+/* MODAL */
+
+.short-modal {
+    width: 60%;
+    margin-bottom: 40%;
+}
+
+.modal-push {
+    bottom: -35%;
+}
+
 /* SOCIAL MEDIA  */
 
 .social-media-section {

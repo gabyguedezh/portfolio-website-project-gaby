@@ -76,15 +76,28 @@
             </div>
             <div class="col-xs-12 col-md-8 flex-row">
                 <div class="col-d">
-                    <p class="heading">Contact Form</h3>
-                        <form class="contact-form normal-p">
-                            <label class="form-label">Name:</label><input class="form-input" type="text" name="name" id="name" placeholder="Name (required)" required/><br>
-                            <label class="form-label">Company:</label><input class="form-input" type="text" name="company" placeholder="Company" /><br>
-                            <label class="form-label">Phone:</label><input class="form-input" type="tel" name="phone" placeholder="Phone" /><br>
-                            <label class="form-label">Email:</label><input class="form-input" type="email" name="email" placeholder="Email (required)" required/><br>
-                            <label class="form-label text-area-label">Message:</label><textarea class="textarea-input" name="message" rows="2" cols="50" placeholder="Message (required)" required/></textarea><br>
-                            <input class="action-button action-text clean-link" type="submit" value="Contact"/>
-                        </form>
+                    <p class="heading">Contact Form</p>
+                    <form class="contact-form normal-p">
+                        <label class="form-label">Name:</label><input class="form-input" type="text" name="name" id="name" placeholder="Name (required)" required/><br>
+                        <label class="form-label">Company:</label><input class="form-input" type="text" name="company" placeholder="Company" /><br>
+                        <label class="form-label">Phone:</label><input class="form-input" type="tel" name="phone" placeholder="Phone" /><br>
+                        <label class="form-label">Email:</label><input class="form-input" type="email" name="email" placeholder="Email (required)" required/><br>
+                        <label class="form-label text-area-label">Message:</label><textarea class="textarea-input" name="message" rows="2" cols="50" placeholder="Message (required)" required/></textarea><br>
+                        <button class="action-button action-text clean-link" value="Contact" data-toggle="modal" data-target="#contactModal" />Contact</button>
+                    </form>
+                    <!-- Modal -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-push" role="document">
+                            <div class="modal-content short-modal">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    Your email has been sent. Thank you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
