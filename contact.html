@@ -11,13 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Gabriela Guedez H.</title>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_5Xn1qDctfqv43fx0Ed77t");
-        })();
-    </script>
-    <!--<script type="text/javascript" src="assets/js/emailjs.js"></script>-->
 </head>
 
 <body class="screen-size bg-main">
@@ -84,13 +77,13 @@
             <div class="col-xs-12 col-md-8 flex-row">
                 <div class="col-d">
                     <p class="heading">Contact Form</h3>
-                        <form class="contact-form normal-p" onsubmit="return sendMail(this);" method="POST">
-                            <label class="form-label">Name:</label><input class="form-input" type="text" name="name" placeholder="Name (required)" required/><br>
+                        <form class="contact-form normal-p">
+                            <label class="form-label">Name:</label><input class="form-input" type="text" name="name" id="name" placeholder="Name (required)" required/><br>
                             <label class="form-label">Company:</label><input class="form-input" type="text" name="company" placeholder="Company" /><br>
                             <label class="form-label">Phone:</label><input class="form-input" type="tel" name="phone" placeholder="Phone" /><br>
                             <label class="form-label">Email:</label><input class="form-input" type="email" name="email" placeholder="Email (required)" required/><br>
                             <label class="form-label text-area-label">Message:</label><textarea class="textarea-input" name="message" rows="2" cols="50" placeholder="Message (required)" required/></textarea><br>
-                            <input class="action-button action-text clean-link" type="submit" value="Contact" />
+                            <input class="action-button action-text clean-link" type="submit" value="Contact"/>
                         </form>
                 </div>
             </div>
