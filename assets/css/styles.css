@@ -489,10 +489,10 @@
 
 .profile-pic {
     float: left;
-    height: 100px;
-    width: 100px;
+    height: 113px;
+    width: 98px;
     border-radius: 50px;
-    background-image: url("/assets/images/gabyguedezh-profile.jpg");
+    /*background-image: url("/assets/images/gabyguedezh-profile.jpg");*/
     background-size: cover;
     margin: 10px;
 }
